@@ -1,0 +1,256 @@
+@import "_patterns";
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: $font-medium;
+}
+.centered,
+.centered-desktop {
+    text-align: center;
+}
+.nowrap {
+    white-space: nowrap;
+}
+
+sub,
+sup {
+	font-family: $ninetysixsans;
+	font-size: 0.75em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;	
+}
+sub {
+	bottom: -0.25em;
+}
+sup {
+	top: -0.25em;
+}
+
+h1,
+.h1-style {
+	color: $gray-900;
+	font-family: $ninetysixsans;
+	font-size: 5.4rem;
+	font-weight: $font-bold;
+	letter-spacing: normal;
+	line-height: 1.15;
+	text-transform: none;
+}
+.h1-subhead {
+	color: $gray-700;
+	font-size: 2.4rem;
+	font-weight: $font-light;
+	letter-spacing: normal;
+	line-height: 1.3333;
+	text-transform: none;
+}
+
+h2,
+.h2-style {
+	color: $gray-900;
+	font-family: $ninetysixsans;
+	font-size: 3.6rem;
+	font-weight: $font-light;
+	letter-spacing: normal;
+	line-height: 1.33333;
+	text-transform: none;
+}
+
+h3,
+.h3-style {
+	color: $gray-900;
+	font-family: $ninetysixsans;
+	font-size: 2.4rem;
+	font-weight: $font-bold;
+	letter-spacing: normal;
+	line-height: 1.33333;
+	text-transform: none;
+}
+.h3-subhead {
+	color: $gray-900;
+	font-size: 1.8rem;
+	font-weight: $font-light;
+	line-height: 1.33333;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+h4,
+.h4-style {
+	color: $gray-900;
+	font-family: $ninetysixsans-condensed;
+	font-size: 1.8rem;
+	font-weight: $font-bold;
+	line-height: 1.4;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+h5,
+.h5-style {
+    color: $gray-900;
+    font-size: 1.2rem;
+    font-weight: $font-bold;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+
+    &.sub-line {
+		overflow: hidden;
+        padding-bottom: 1.25em;
+        position: relative;
+
+        &:after {
+            background: $gray-700;
+            bottom: 0;
+            display: block;
+            content: "";
+            height: 1px;
+            position: absolute;
+            width: 32px;
+
+            .centered & {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+.h5-subhead {
+    color: $gray-700;
+    font-size: 1.3rem;
+    font-weight: $font-regular;
+}
+
+p,
+.p-style {
+    color: $gray-700;
+    font-size: 1.6rem;
+    font-weight: $font-regular;
+
+    &.small-text {
+        font-size: 1.4rem;
+    }
+
+    &.smaller-text {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@include size(medium) {
+    h1,
+    .h1-style {
+        font-size: 4.7rem;
+    }
+	.h1-subhead {
+		font-size: 2.2rem;
+	}
+
+    h2,
+    .h2-style {
+        font-size: 3.1rem;
+    }
+
+    h3,
+    .h3-style {
+        font-size: 2.2rem;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@include size(small) {
+    .centered-desktop {
+        text-align: left;
+    }
+
+    h1,
+    .h1-style {
+        font-size: 3.9rem
+    }
+
+    .h1-subhead {
+        font-size: 2rem;
+    }
+
+    h2,
+    .h2-style {
+        font-size: 2.7rem;
+    }
+
+    h3,
+    .h3-style {
+        font-size: 2rem;
+    }
+
+    .h3-subhead {
+        font-size: 1.7rem;
+    }
+
+    h4,
+    .h4-style {
+        font-size: 1.7rem;
+    }
+
+    p,
+    .p-style {
+        font-size: 1.5rem;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@include size(tiny) {
+    .centered-desktop {
+        text-align: left;
+    }
+
+    h1,
+    .h1-style {
+        font-size: 3.2rem;
+    }
+
+    .h1-subhead {
+        font-size: 1.8rem;
+    }
+
+    h2,
+    .h2-style {
+        font-size: 2.2rem;
+    }
+
+    h3,
+    .h3-style {
+        font-size: 1.8rem;
+    }
+
+    .h3-subhead {
+        font-size: 1.6rem;
+    }
+
+    h4,
+    .h4-style {
+        font-size: 1.6rem;
+    }
+
+    p,
+    .p-style {
+        font-size: 1.4rem;
+    }
+}

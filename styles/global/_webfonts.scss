@@ -1,0 +1,74 @@
+// Filename: _webfonts.scss
+// Description: Font-face calls to include all customer font files
+@import "_patterns";
+
+
+@font-face {
+	font-family: "96 Sans";
+	font-display: swap;
+	font-weight: $font-light;
+	src: url("/assets/fonts/96sans/96Sans-Light.woff2") format("woff2"),
+		url("/assets/fonts/96sans/96Sans-Light.woff") format("woff"),
+		url("/assets/fonts/96sans/96Sans-Light.ttf") format("truetype")
+}
+
+@font-face {
+	font-family: "96 Sans Icons";
+	src: url("/assets/fonts/96sans/96Sans.woff2") format("woff2"),
+		url("/assets/fonts/96sans/96Sans.woff") format("woff"),
+		url("/assets/fonts/96sans/96Sans.ttf") format("truetype")
+}
+
+@font-face {
+	font-family: "96 Sans";
+	font-display: swap;
+	font-weight: $font-regular;
+	src: url("/assets/fonts/96sans/96Sans.woff2") format("woff2"),
+		url("/assets/fonts/96sans/96Sans.woff") format("woff"),
+		url("/assets/fonts/96sans/96Sans.ttf") format("truetype")
+}
+
+@font-face {
+	font-family: "96 Sans";
+	font-display: swap;
+	font-weight: $font-medium;
+	src: url("/assets/fonts/96sans/96Sans-Medium.woff2") format("woff2"),
+		url("/assets/fonts/96sans/96Sans-Medium.woff") format("woff"),
+		url("/assets/fonts/96sans/96Sans-Medium.ttf") format("truetype")
+}
+
+@font-face {
+	font-family: "96 Sans";
+	font-display: swap;
+	font-weight: $font-bold;
+	src: url("/assets/fonts/96sans/96Sans-Bold.woff2") format("woff2"),
+		url("/assets/fonts/96sans/96Sans-Bold.woff") format("woff"),
+		url("/assets/fonts/96sans/96Sans-Bold.ttf") format("truetype")
+}
+
+@font-face {
+	font-family: "96 Sans Condensed";
+	font-display: swap;
+	font-weight: $font-bold;
+	src: url("/assets/fonts/96sans/96Sans-BoldCondensed.woff2") format("woff2"),
+		url("/assets/fonts/96sans/96Sans-BoldCondensed.woff") format("woff"),
+		url("/assets/fonts/96sans/96Sans-BoldCondensed.ttf") format("truetype")
+}
+
+@font-face {
+	font-family: "96 Sans Condensed";
+	font-display: swap;
+	font-weight: $font-light;
+	src: url("/assets/fonts/96sans/96Sans-Condensed.woff2") format("woff2"),
+		url("/assets/fonts/96sans/96Sans-Condensed.woff") format("woff"),
+		url("/assets/fonts/96sans/96Sans-Condensed.ttf") format("truetype")
+}
+
+@font-face {
+	font-family: "96 Sans Monospaced";
+	font-display: swap;
+	font-weight: $font-regular;
+	src: url("/assets/fonts/96sans/96Sans-Monospaced.woff2") format("woff2"),
+		url("/assets/fonts/96sans/96Sans-Monospaced.woff") format("woff"),
+		url("/assets/fonts/96sans/96Sans-Monospaced.ttf") format("truetype")
+}

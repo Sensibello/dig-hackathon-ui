@@ -1,37 +1,104 @@
 <template>
-  <main>
-    <div class="intro">
-      <h1>Nuxt Toolbox</h1>
-      <p>
-        Hi 👋! This template gives you a
-        <a href="https://nuxtjs.org/">Nuxt</a> app with the scaffolding for
-        <a href="https://www.netlify.com/products/functions/"
-          >Netlify Functions</a
-        >, <a href="https://www.netlify.com/products/forms/">Forms</a>, and
-        <a href="https://docs.netlify.com/routing/redirects/">Redirects</a>. Our
-        aim was to give you the code you would need to hit the ground running
-        with a few fun features.
-      </p>
+<main id="main" tabindex="-1">
 
-      <p>
-        You can find the code for this project on GitHub at
-        <a href="https://github.com/netlify-templates/nuxt-toolbox"
-          >https://github.com/netlify-templates/nuxt-toolbox</a
-        >! Happy coding!
-      </p>
-    </div>
-    <FeedbackForm />
-    <JokeBlock />
-  </main>
+  <h4> sick slider test </h4>
+  <swiper-slider> </swiper-slider> 
+  
+  
+  <article-cta  
+    header="Something to Discover"
+    title="Progressive Home"
+    description="Safety, maintenance, and DIY tips"
+    ctaLink="/"
+    ctaText="View more articles"
+  />
+
+
+
+  <article-tile :articles="[     
+    {
+      title: 'I wanna rock and roll all night... and party every day', 
+      url: '/',
+      image: '300x167.jpeg',
+      categoryTitle: 'Turning Points',
+      categoryUrl: 'turning-points',
+      readingTime: '4',
+    },
+    {
+      title: 'Avoid going to jail - 47 hacks for avoiding jailtime', 
+      url: '/',
+      image: '300x167.jpeg',
+      categoryTitle: 'On the Road',
+      categoryUrl: 'on-the-road',
+      readingTime: '4',
+    },
+    {
+      title: 'How to know if your cat trained you', 
+      url: '/',
+      image: '300x167.jpeg',
+      categoryTitle: 'Adventure',
+      categoryUrl: 'adventure',
+      readingTime: '4',
+    },
+    {
+      title: 'The inner machinations of my mind are an enigma', 
+      url: '/',
+      image: '300x167.jpeg',
+      categoryTitle: 'Household',
+      categoryUrl: 'household',
+      readingTime: '4',
+    },
+    {
+      title: 'From Fear Factor to podcasting: How Joe Rogan lost his mind', 
+      url: '/',
+      image: '300x167.jpeg',
+      categoryTitle: 'Turning Points',
+      categoryUrl: 'turning-points',
+      readingTime: '4',
+    },
+    {
+      title: 'How to train your dog to sniff out weird dudes', 
+      url: '/',
+      image: '300x167.jpeg',
+      categoryTitle: 'On the Road',
+      categoryUrl: 'on-the-road',
+      readingTime: '4',
+    },
+  ]" />
+
+</main>
 </template>
 
-<style>
-* {
-  font-family: 'Helvetica', sans-serif;
+<script>
+/* import {COMPONENT NAME} from "~/components/..."; */
+import ArticleCta from "~/components/ArticleCta.vue"; 
+import ArticleTile from "~/components/ArticleTile.vue"; 
+
+export default {
+
+  data() {
+      return {
+          title: 'Life Lanes',
+      }
+  },
+  head() {
+      return {
+          title: this.title,
+      }
+  },
+
+  layout: 'default',
+
+  components: {
+    ArticleCta,
+    ArticleTile
+  }
+  
 }
-.intro {
-  min-width: 400px;
-  padding: 10px 40px;
-  width: 60%;
-}
+</script>
+
+
+<style lang="scss">
+
+
 </style>
